@@ -106,7 +106,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-elevated">
                 <img
-                  src="https://res.cloudinary.com/dytr7tpmt/image/upload/v1768923823/photo-1716816211590-c15a328a5ff0_ipqref.jpg"
+                  src="https://res.cloudinary.com/dytr7tpmt/image/upload/v1768933611/930f01bb-e7dc-4f36-a1ca-6d4f204ce549.png"
                   alt="Premium Quality Flour"
                   className="w-full h-auto"
                 />
@@ -333,9 +333,11 @@ export default function HomePage() {
                 Contact to Make an Order
               </Button>
             </Link>
+            <Link to="https://www.amazon.in/s?k=SMS+FOODPRO" target="_blank">
             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground">
               Shop Now on Amazon
             </Button>
+            </Link>
           </div>
         </div>
       </section>

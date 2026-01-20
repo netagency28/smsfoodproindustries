@@ -7,6 +7,7 @@ export const products = [
     weight: '500g',
     category: 'Besan Flour',
     features: ['Naturally Processed', 'Hygienically Packed', 'Best for Sweet & Savouries'],
+    amazonUrl: 'https://www.amazon.in/dp/B0F247XN2L?ref=cm_sw_r_cso_cp_apin_dp_AHM14MYZ44XW16TTHWWE&ref_=cm_sw_r_cso_cp_apin_dp_AHM14MYZ44XW16TTHWWE&social_share=cm_sw_r_cso_cp_apin_dp_AHM14MYZ44XW16TTHWWE&previewDoh=1',
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const products = [
     weight: '500g',
     category: 'Besan Flour',
     features: ['Premium Quality', 'Natural Processing', 'Perfect Texture'],
+    amazonUrl: 'https://www.amazon.in/dp/B0F24583YK?ref=cm_sw_r_cso_wa_apin_dp_1S622P5DEDSNZAQ24P0M&ref_=cm_sw_r_cso_wa_apin_dp_1S622P5DEDSNZAQ24P0M&social_share=cm_sw_r_cso_wa_apin_dp_1S622P5DEDSNZAQ24P0M&previewDoh=1',
   },
   {
     id: 3,
@@ -25,15 +27,17 @@ export const products = [
     weight: '500g',
     category: 'Besan Flour',
     features: ['Traditional Recipe', 'Authentic Taste', 'Long Freshness'],
+    amazonUrl: 'https://www.amazon.in/dp/B0F245T6K2?ref=cm_sw_r_cso_wa_apin_dp_4JK7D124AHYJV1MXHFC5&ref_=cm_sw_r_cso_wa_apin_dp_4JK7D124AHYJV1MXHFC5&social_share=cm_sw_r_cso_wa_apin_dp_4JK7D124AHYJV1MXHFC5&previewDoh=1',
   },
   {
     id: 4,
     name: 'Soy King',
     description: 'Textured soya protein chunks - perfect for healthy, protein-rich meals.',
     image: 'https://res.cloudinary.com/dytr7tpmt/image/upload/v1768922775/670008185e3f7bd789e06e6e_soy_20king_20_27_20size_20large_nw8e1v.png',
-    weight: '1kg',
+    weight: '200g',
     category: 'Soya Products',
     features: ['High Protein', 'Versatile Use', 'Nutritious'],
+    amazonUrl: '#',
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ export const products = [
     weight: '1kg',
     category: 'Corn Flour',
     features: ['Natural Freshness', 'Hygienic Packing', 'Multi-purpose'],
+    amazonUrl: '#',
   },
 
   {
@@ -50,9 +55,10 @@ export const products = [
     name: 'Rice Flour',
     description: 'Hygienically packed rice flour for natural freshness. Perfect for various culinary uses.',
     image: 'https://res.cloudinary.com/dytr7tpmt/image/upload/v1768923078/rice_otf8g7.png',
-    weight: '1kg',
+    weight: '500g',
     category: 'Rice Flour',
     features: ['Natural Freshness', 'Hygienic Packing', 'Multi-purpose'],
+    amazonUrl: '#',
   },
 
   {
@@ -60,9 +66,10 @@ export const products = [
     name: 'Ragi Flour',
     description: 'Hygienically packed ragi flour for natural freshness. Perfect for various culinary uses.',
     image: 'https://res.cloudinary.com/dytr7tpmt/image/upload/v1768923079/ragi_i4lcvo.png',
-    weight: '1kg',
+    weight: '500g',
     category: 'Ragi Flour',
     features: ['Natural Freshness', 'Hygienic Packing', 'Multi-purpose'],
+    amazonUrl: '#',
   },
 
 ];

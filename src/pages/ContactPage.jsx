@@ -228,10 +228,8 @@ export default function ContactPage() {
       <section className="pb-20 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
           <Card className="border-border shadow-soft overflow-hidden">
-            <div className="aspect-video bg-muted flex items-center justify-center">
-              <p className="text-muted-foreground">
-                Map integration can be added here
-              </p>
+            <div className="aspect-video bg-muted flex justify-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.5643207330513!2d78.12015928206363!3d11.654362859037244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1ebbc4d3519%3A0x32413b6767bda239!2sSMS%20food%20pro%20industries!5e0!3m2!1sen!2sin!4v1768932318418!5m2!1sen!2sin" width="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </Card>
         </div>

@@ -14,8 +14,11 @@ export const ProductCard = ({ product }) => {
   };
 
   const handleAmazonClick = () => {
-    // Placeholder - replace with actual Amazon link
-    toast.info('Amazon link will open here');
+    if (product.amazonUrl) {
+      window.open(product.amazonUrl, '_blank');
+    } else {
+      toast.error('Amazon link not available');
+    }
   };
 
   return (

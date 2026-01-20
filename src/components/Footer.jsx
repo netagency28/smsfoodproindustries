@@ -25,7 +25,8 @@ export const Footer = () => {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/smsfoodproindustries/"
+                target="_blank"
                 className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
                 aria-label="Instagram"
               >
@@ -131,6 +132,11 @@ export const Footer = () => {
             <p className="text-sm text-muted-foreground">
               © {currentYear} SMS FoodPro Industries. All rights reserved.
             </p>
+
+            <p className="text-sm text-muted-foreground">
+              Designed and Developed by <a href="https://netagency.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline transition-smooth">Net Agency</a>
+            </p>
+
             <div className="flex space-x-6">
               <a
                 href="#"

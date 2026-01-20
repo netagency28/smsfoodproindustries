@@ -141,7 +141,7 @@ export default function MissionPage() {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1595855759920-86582396756a?w=800&q=80"
+                src="https://res.cloudinary.com/dytr7tpmt/image/upload/v1768933108/e9f9b9d1-05a8-4f67-b1b3-a20b59568ea0.png"
                 alt="Wheat field"
                 className="rounded-2xl shadow-elevated w-full h-auto"
               />
