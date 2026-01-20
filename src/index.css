@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@layer base {
+    :root {
+        /* Earth Tone Color Palette - Elegant Flour Products */
+        --background: 39 40% 97%;           /* Soft cream background */
+        --foreground: 30 25% 20%;           /* Deep warm brown text */
+        
+        --card: 0 0% 100%;                  /* Pure white cards */
+        --card-foreground: 30 25% 20%;
+        
+        --popover: 0 0% 100%;
+        --popover-foreground: 30 25% 20%;
+        
+        --primary: 31 45% 44%;              /* Warm Peru brown - main brand color */
+        --primary-foreground: 0 0% 100%;
+        
+        --secondary: 38 84% 43%;            /* Golden brown - accent */
+        --secondary-foreground: 0 0% 100%;
+        
+        --muted: 36 30% 90%;                /* Light beige muted */
+        --muted-foreground: 30 15% 45%;
+        
+        --accent: 12 60% 55%;               /* Terracotta accent */
+        --accent-foreground: 0 0% 100%;
+        
+        --success: 150 45% 40%;
+        --success-foreground: 0 0% 100%;
+        
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        
+        --border: 36 20% 85%;
+        --input: 36 20% 85%;
+        --ring: 31 45% 44%;
+        
+        /* Custom Design Tokens */
+        --gradient-hero: linear-gradient(135deg, hsl(39 40% 97%), hsl(36 50% 92%));
+        --gradient-accent: linear-gradient(135deg, hsl(31 45% 44%), hsl(38 84% 43%));
+        --shadow-soft: 0 2px 20px -5px hsl(31 45% 44% / 0.15);
+        --shadow-elevated: 0 10px 40px -10px hsl(31 45% 44% / 0.25);
+        --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        
+        --radius: 0.75rem;
+    }
+    
+    .dark {
+        --background: 30 15% 12%;
+        --foreground: 36 30% 95%;
+        --card: 30 15% 15%;
+        --card-foreground: 36 30% 95%;
+        --popover: 30 15% 15%;
+        --popover-foreground: 36 30% 95%;
+        --primary: 38 84% 43%;
+        --primary-foreground: 30 15% 12%;
+        --secondary: 31 45% 44%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: 30 15% 20%;
+        --muted-foreground: 36 20% 65%;
+        --accent: 12 60% 55%;
+        --accent-foreground: 0 0% 100%;
+        --border: 30 15% 25%;
+        --input: 30 15% 25%;
+        --ring: 38 84% 43%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-serif;
+    }
+}
+
+@layer utilities {
+    .font-serif {
+        /* font-family: 'Cormorant Garamond', Georgia, serif; */
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    }
+    
+    .gradient-hero {
+        background: var(--gradient-hero);
+    }
+    
+    .gradient-accent {
+        background: var(--gradient-accent);
+    }
+    
+    .shadow-soft {
+        box-shadow: var(--shadow-soft);
+    }
+    
+    .shadow-elevated {
+        box-shadow: var(--shadow-elevated);
+    }
+    
+    .transition-smooth {
+        transition: var(--transition-smooth);
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--secondary));
+}

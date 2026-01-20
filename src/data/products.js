@@ -1,0 +1,68 @@
+export const products = [
+  {
+    id: 1,
+    name: 'Grand Besan Flour',
+    description: 'Best choice for sweet & savouries. Naturally processed & hygienically packed.',
+    image: 'https://res.cloudinary.com/dytr7tpmt/image/upload/v1768922721/6700007215aa2b0397b31ec3_sms_20jpg_kbbcsa.png',
+    weight: '500g',
+    category: 'Besan Flour',
+    features: ['Naturally Processed', 'Hygienically Packed', 'Best for Sweet & Savouries'],
+  },
+  {
+    id: 2,
+    name: 'Royal Besan Flour',
+    description: 'Premium besan flour for sweet & savouries. Naturally processed with superior quality.',
+    image: 'https://res.cloudinary.com/dytr7tpmt/image/upload/v1768922750/6700021a58fb2a673f008aac_royal_20png_20big_20size_oey0sp.png',
+    weight: '500g',
+    category: 'Besan Flour',
+    features: ['Premium Quality', 'Natural Processing', 'Perfect Texture'],
+  },
+  {
+    id: 3,
+    name: 'Shakthi Besan Flour',
+    description: 'Traditional besan flour crafted for authentic taste. Hygienically packed for freshness.',
+    image: 'https://res.cloudinary.com/dytr7tpmt/image/upload/v1768922762/67000316f0630d3ab7729380_sakthi_20size_20large_drabtu.png',
+    weight: '500g',
+    category: 'Besan Flour',
+    features: ['Traditional Recipe', 'Authentic Taste', 'Long Freshness'],
+  },
+  {
+    id: 4,
+    name: 'Soy King',
+    description: 'Textured soya protein chunks - perfect for healthy, protein-rich meals.',
+    image: 'https://res.cloudinary.com/dytr7tpmt/image/upload/v1768922775/670008185e3f7bd789e06e6e_soy_20king_20_27_20size_20large_nw8e1v.png',
+    weight: '1kg',
+    category: 'Soya Products',
+    features: ['High Protein', 'Versatile Use', 'Nutritious'],
+  },
+  {
+    id: 5,
+    name: 'Corn Flour',
+    description: 'Hygienically packed corn flour for natural freshness. Perfect for various culinary uses.',
+    image: 'https://res.cloudinary.com/dytr7tpmt/image/upload/v1768922784/670003063ddaa6d2d8517337_sms_20cornflour_20size_20large_gu0fos.png',
+    weight: '1kg',
+    category: 'Corn Flour',
+    features: ['Natural Freshness', 'Hygienic Packing', 'Multi-purpose'],
+  },
+
+  {
+    id: 6,
+    name: 'Rice Flour',
+    description: 'Hygienically packed rice flour for natural freshness. Perfect for various culinary uses.',
+    image: 'https://res.cloudinary.com/dytr7tpmt/image/upload/v1768923078/rice_otf8g7.png',
+    weight: '1kg',
+    category: 'Rice Flour',
+    features: ['Natural Freshness', 'Hygienic Packing', 'Multi-purpose'],
+  },
+
+  {
+    id: 7,
+    name: 'Ragi Flour',
+    description: 'Hygienically packed ragi flour for natural freshness. Perfect for various culinary uses.',
+    image: 'https://res.cloudinary.com/dytr7tpmt/image/upload/v1768923079/ragi_i4lcvo.png',
+    weight: '1kg',
+    category: 'Ragi Flour',
+    features: ['Natural Freshness', 'Hygienic Packing', 'Multi-purpose'],
+  },
+
+];
