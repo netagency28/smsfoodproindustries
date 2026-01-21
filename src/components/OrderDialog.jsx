@@ -51,7 +51,7 @@ export default function OrderDialog({ isOpen, onClose }) {
 
     const message = `*New Order Request*%0A%0A*Customer Details:*%0AName: ${formData.name}%0APhone: ${formData.phone}%0AAddress: ${formData.address}%0ACity: ${formData.city}%0APincode: ${formData.pincode}%0A%0A*Order Details:*%0A${orderDetails}%0A%0A*Additional Comments:*%0A${formData.comments || 'None'}`;
 
-    const whatsappURL = `https://wa.me/919986639995?text=${message}`;
+    const whatsappURL = `https://wa.me/919500446608?text=${message}`;
 
     // Open WhatsApp
     window.open(whatsappURL, '_blank');

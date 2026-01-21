@@ -15,10 +15,12 @@ export const CartProvider = ({ children }) => {
 
   const addToCart = (product) => {
     setCartItems((prevItems) => {
-      const existingItem = prevItems.find((item) => item.id === product.id);
+      const existingItem = prevItems.find(
+        (item) => item.id === product.id && item.weight === product.weight
+      );
       if (existingItem) {
         return prevItems.map((item) =>
-          item.id === product.id
+          item.id === product.id && item.weight === product.weight
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );

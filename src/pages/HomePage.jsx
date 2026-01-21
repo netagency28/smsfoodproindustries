@@ -15,6 +15,8 @@ import {
   Truck,
   ChevronDown,
   ChevronUp,
+  MessageCircle,
+  PhoneCall,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ProductCard } from '@/components/ProductCard';
@@ -58,12 +60,12 @@ export default function HomePage() {
     {
       question: 'What are the packaging options for your products?',
       answer:
-        'We offer various packaging options ranging from 500g to 1kg packs. All our products are hygienically packed to maintain freshness and sealed to ensure food safety.',
+        'We offer various retail packaging options from 500g to 1kg. We also specialize in bulk orders, providing 10kg, 30kg, and 50kg bags as per customer requirements.',
     },
     {
       question: 'How can I place an order with SMS FoodPro?',
       answer:
-        'You can place orders directly through our website by adding products to your cart and filling out the order form. We also offer our products on Amazon for your convenience.',
+        'You can place orders through our website, or for bulk and custom requirements, reach out to us directly via WhatsApp or our Contact Us page.',
     },
   ];
 
@@ -230,7 +232,7 @@ export default function HomePage() {
                     icon: Truck,
                     title: 'Packaging & Delivery',
                     description:
-                      'Products are hygienically packed in our state-of-the-art facility and delivered fresh to ensure maximum quality and shelf life.',
+                      'Retail products are hygienically packed. We also provide customized bulk packaging in 10kg, 30kg, and 50kg sizes for industrial needs.',
                   },
                 ].map((step, index) => (
                   <Card key={index} className="border-border hover:shadow-soft transition-smooth">
@@ -304,6 +306,42 @@ export default function HomePage() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Bulk Order Banner Component */}
+      <section className="py-10 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto">
+          <div className="relative overflow-hidden rounded-3xl bg-secondary/10 border border-secondary/20 p-8 sm:p-12 text-center group">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 opacity-50" />
+            <div className="relative space-y-6">
+              <Badge className="bg-primary text-primary-foreground">BULK ORDERS AVAILABLE</Badge>
+              <h2 className="text-3xl sm:text-4xl font-serif font-bold text-foreground max-w-2xl mx-auto leading-tight">
+                Bulk ordering is available in <span className="text-primary italic">10kg, 30kg and 50kg</span> bag options as per customer needs
+              </h2>
+              <div className="flex flex-wrap justify-center gap-4 pt-2">
+                <Button 
+                  asChild
+                  className="bg-primary hover:bg-primary/90 transition-smooth rounded-xl font-semibold shadow-sm"
+                >
+                  <a href="https://wa.me/919500446608?text=Hello%20SMS%20Food%20Pro%2C%20I%20am%20interested%20in%20bulk%20orders%20for%2010kg%2C%2030kg%2C%20and%2050kg%20bags.%20Please%20provide%20more%20information." target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="mr-3 h-5 w-5" />
+                    Enquire on WhatsApp
+                  </a>
+                </Button>
+                <Button 
+                  asChild
+                  variant="outline"
+                  className="bg-background/50 backdrop-blur-sm border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground rounded-xl font-semibold shadow-sm transition-all hover:-translate-y-1"
+                >
+                  <Link to="/contact">
+                    <PhoneCall className="mr-3 h-5 w-5" />
+                    Contact Sales
+                  </Link>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>

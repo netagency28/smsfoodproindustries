@@ -34,7 +34,7 @@ export default function ContactPage() {
     // Create WhatsApp message
     const message = `*New Contact Form Submission*%0A%0A*Name:* ${formData.name}%0A*Email:* ${formData.email}%0A*Phone:* ${formData.phone || 'Not provided'}%0A*Subject:* ${formData.subject || 'General Inquiry'}%0A%0A*Message:*%0A${formData.message}`;
 
-    const whatsappURL = `https://wa.me/919986639995?text=${message}`;
+    const whatsappURL = `https://wa.me/919500446608?text=${message}`;
 
     // Open WhatsApp
     window.open(whatsappURL, '_blank');
@@ -87,8 +87,8 @@ export default function ContactPage() {
                   {
                     icon: Phone,
                     title: 'Phone',
-                    content: '+91 9986639995',
-                    link: 'tel:+919986639995',
+                    content: '+91 95004 46608',
+                    link: 'tel:+919500446608',
                   },
                   {
                     icon: Mail,

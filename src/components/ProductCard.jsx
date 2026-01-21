@@ -1,25 +1,45 @@
+import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ShoppingCart, ExternalLink } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
 import { toast } from 'sonner';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
 
 export const ProductCard = ({ product }) => {
   const { addToCart } = useCart();
+  const [selectedWeight, setSelectedWeight] = useState(product.variants[0].weight);
+
+  const selectedVariant = product.variants.find((v) => v.weight === selectedWeight) || product.variants[0];
 
   const handleAddToCart = () => {
-    addToCart(product);
-    toast.success(`${product.name} added to cart!`);
+    const productWithVariant = {
+      ...product,
+      weight: selectedVariant.weight,
+      image: selectedVariant.image,
+      amazonUrl: selectedVariant.amazonUrl,
+    };
+    delete productWithVariant.variants;
+    addToCart(productWithVariant);
+    toast.success(`${product.name} (${selectedVariant.weight}) added to cart!`);
   };
 
   const handleAmazonClick = () => {
-    if (product.amazonUrl) {
-      window.open(product.amazonUrl, '_blank');
+    if (selectedVariant.amazonUrl && selectedVariant.amazonUrl !== '#') {
+      window.open(selectedVariant.amazonUrl, '_blank');
     } else {
-      toast.error('Amazon link not available');
+      toast.error('Amazon link not available for this size');
     }
   };
+
+  const isBulk = selectedVariant.weight.includes('kg') && parseInt(selectedVariant.weight) >= 10;
 
   return (
     <Card className="group overflow-hidden border-border hover:shadow-elevated transition-smooth">
@@ -27,13 +47,29 @@ export const ProductCard = ({ product }) => {
         {/* Product Image */}
         <div className="relative aspect-square overflow-hidden bg-muted">
           <img
-            src={product.image}
+            src={selectedVariant.image}
             alt={product.name}
             className="w-full h-full object-contain p-6 transition-smooth group-hover:scale-105"
           />
-          <Badge className="absolute top-4 right-4 bg-secondary text-secondary-foreground">
-            {product.weight}
-          </Badge>
+          {isBulk && (
+            <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">
+              Bulk Order
+            </Badge>
+          )}
+          <div className="absolute top-4 right-4">
+            <Select value={selectedWeight} onValueChange={setSelectedWeight}>
+              <SelectTrigger className="w-[80px] bg-secondary text-secondary-foreground border-none h-8 text-xs font-semibold">
+                <SelectValue placeholder="Size" />
+              </SelectTrigger>
+              <SelectContent>
+                {product.variants.map((variant) => (
+                  <SelectItem key={variant.weight} value={variant.weight}>
+                    {variant.weight}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
         </div>
 
         {/* Product Info */}
