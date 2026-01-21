@@ -365,7 +365,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="flex justify-center gap-4 mt-12">
+          <div className="flex justify-center gap-4 mt-12 flex-row items-center md:flex-row flex-col">
             <Link to="/contact">
               <Button size="lg" variant="outline" className="border-primary/20 hover:bg-primary/5">
                 Contact to Make an Order
