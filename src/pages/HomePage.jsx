@@ -44,17 +44,17 @@ export default function HomePage() {
 
   const faqs = [
     {
-      question: 'What types of flour does SMS FoodPro produce?',
+      question: 'What types of flour does SMS Food Pro produce?',
       answer:
         'We produce a variety of premium quality flours including Grand Besan Flour, Royal Besan Flour, Shakthi Besan Flour, Soy Chunks, and Corn Flour. All our products are naturally processed and hygienically packed.',
     },
     {
-      question: "How is SMS FoodPro's besan flour made?",
+      question: "How is SMS Food Pro's besan flour made?",
       answer:
         'Our besan flour is made using advanced roller mills in a fully automated stainless steel facility. We follow a precise process of grinding, biotech enhancement, sieving, and hygienic packaging to ensure the highest quality.',
     },
     {
-      question: "What makes SMS FoodPro's flour unique?",
+      question: "What makes SMS Food Pro's flour unique?",
       answer:
         'Our flour stands out due to our commitment to quality, purity, and consistency. We use the finest ingredients, state-of-the-art machinery, and maintain strict quality control throughout the production process.',
     },
@@ -64,7 +64,7 @@ export default function HomePage() {
         'We offer various retail packaging options from 500g to 1kg. We also specialize in bulk orders, providing 10kg, 30kg, and 50kg bags as per customer requirements.',
     },
     {
-      question: 'How can I place an order with SMS FoodPro?',
+      question: 'How can I place an order with SMS Food Pro?',
       answer:
         'You can place orders through our website, or for bulk and custom requirements, reach out to us directly via WhatsApp or our Contact Us page.',
     },
@@ -85,7 +85,7 @@ export default function HomePage() {
               </Badge>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold text-foreground leading-tight">
                 Welcome to{' '}
-                <span className="text-primary">SMS FoodPro</span>
+                <span className="text-primary">SMS Food Pro</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
                 Destination for premium quality flour, crafted for all your needs.
@@ -129,7 +129,7 @@ export default function HomePage() {
               Our Story
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              SMS FoodPro was founded with a vision to deliver the finest quality flours to households and businesses across the region. What started as a small family initiative has grown into a trusted name in premium flour production. Our journey began with a simple promise: to honor traditional processing methods while embracing modern technology and hygiene standards.
+              SMS Food Pro was founded with a vision to deliver the finest quality flours to households and businesses across the region. What started as a small family initiative has grown into a trusted name in premium flour production. Our journey began with a simple promise: to honor traditional processing methods while embracing modern technology and hygiene standards.
             </p>
             
 
@@ -265,7 +265,7 @@ export default function HomePage() {
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-serif font-bold text-foreground mb-4">
-              Why SMS FoodPro?
+              Why SMS Food Pro?
             </h2>
             <p className="text-lg text-muted-foreground">
               Delivering premium, high-quality besan flour with purity, consistency, and innovation in every batch.

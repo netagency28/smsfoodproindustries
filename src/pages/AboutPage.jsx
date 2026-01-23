@@ -12,7 +12,7 @@ export default function AboutPage() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 gradient-hero">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl font-serif font-bold text-foreground mb-6">
-            About <span className="text-primary">SMS FoodPro</span>
+            About <span className="text-primary">SMS Food Pro</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             A legacy of quality, tradition, and trust in every grain
@@ -30,13 +30,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  SMS FoodPro has been a trusted name in premium flour products for several years. What started as a small family business has grown into a leading provider of high-quality flours and grain products. Established in 2019, we launched our state-of-the-art milling facility in 2020.
+                  SMS Food Pro has been a trusted name in premium flour products for several years. What started as a small family business has grown into a leading provider of high-quality flours and grain products. Established in 2019, we launched our state-of-the-art milling facility in 2020.
                 </p>
                 <p>
                   Our journey began with a simple promise: to deliver the finest quality flours that honor traditional processing methods while embracing modern hygiene standards. With our advanced, fully automated stainless steel machines and a production capacity of 75MT per day, we serve both households and commercial clients.
                 </p>
                 <p>
-                  We source our grains from trusted farmers and process them with care, ensuring that every package of SMS FoodPro meets our exacting standards. Our commitment to quality has made us a household name among families who value authentic taste and nutrition.
+                  We source our grains from trusted farmers and process them with care, ensuring that every package of SMS Food Pro meets our exacting standards. Our commitment to quality has made us a household name among families who value authentic taste and nutrition.
                 </p>
               </div>
             </div>
@@ -116,10 +116,10 @@ export default function AboutPage() {
               Our Commitment to You
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              At SMS FoodPro, we're more than just a flour company. We're a family-owned business that takes pride in serving families like yours. Every product that leaves our facility carries our commitment to quality, purity, and customer satisfaction.
+              At SMS Food Pro, we're more than just a flour company. We're a family-owned business that takes pride in serving families like yours. Every product that leaves our facility carries our commitment to quality, purity, and customer satisfaction.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Thank you for trusting SMS FoodPro to be part of your kitchen and your family traditions.
+              Thank you for trusting SMS Food Pro to be part of your kitchen and your family traditions.
             </p>
           </div>
         </div>

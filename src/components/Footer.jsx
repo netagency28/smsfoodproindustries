@@ -11,7 +11,7 @@ export const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <h3 className="text-2xl font-serif font-bold text-primary">
-              SMS FoodPro
+              SMS Food Pro
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Premium quality flours crafted with precision and care. From traditional to multigrain blends, elevating every dish you create.
@@ -44,7 +44,7 @@ export const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-foreground">SMS FOODPRO INDUSTRIES</h4>
+            <h4 className="text-lg font-semibold text-foreground">SMS FOOD PRO INDUSTRIES</h4>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 {/* <Phone className="h-4 w-4 text-primary mt-1 flex-shrink-0" /> */}
@@ -139,7 +139,7 @@ export const Footer = () => {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} SMS FoodPro Industries. All rights reserved.
+              © {currentYear} SMS Food Pro Industries. All rights reserved.
             </p>
 
             <p className="text-sm text-muted-foreground">

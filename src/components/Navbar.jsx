@@ -45,7 +45,7 @@ export const Navbar = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2 group">
               {/* <div className="text-2xl sm:text-3xl font-serif font-bold text-primary transition-smooth group-hover:text-secondary">
-                SMS FoodPro
+                SMS Food Pro
               </div> */}
               <img src="https://res.cloudinary.com/dytr7tpmt/image/upload/v1768924116/66ebbfa9c6467bf149632b1c_SMS_20New_20Logo_t1ant8.png" width={80} height={80} alt="" />
             </Link>

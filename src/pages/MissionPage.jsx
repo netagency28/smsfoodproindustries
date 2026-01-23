@@ -129,7 +129,7 @@ export default function MissionPage() {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  We envision a future where SMS FoodPro is recognized not just as a provider of quality products, but as a leader in sustainable food production and community development.
+                  We envision a future where SMS Food Pro is recognized not just as a provider of quality products, but as a leader in sustainable food production and community development.
                 </p>
                 <p>
                   We're committed to expanding our product range while maintaining our core values, investing in innovative processing technologies that preserve nutritional value, and continuing to support the farmers and communities that make our work possible.
