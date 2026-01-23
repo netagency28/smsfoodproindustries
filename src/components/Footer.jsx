@@ -32,13 +32,13 @@ export const Footer = () => {
               >
                 <Instagram className="h-5 w-5" />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -47,7 +47,7 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold text-foreground">SMS FOODPRO INDUSTRIES</h4>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
-                <Phone className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                {/* <Phone className="h-4 w-4 text-primary mt-1 flex-shrink-0" /> */}
                 {/* <a
                   href="tel:+919986639995"
                   className="text-sm text-muted-foreground hover:text-primary transition-smooth"

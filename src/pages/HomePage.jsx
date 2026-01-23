@@ -17,6 +17,7 @@ import {
   ChevronUp,
   MessageCircle,
   PhoneCall,
+  IndianRupee,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ProductCard } from '@/components/ProductCard';
@@ -45,7 +46,7 @@ export default function HomePage() {
     {
       question: 'What types of flour does SMS FoodPro produce?',
       answer:
-        'We produce a variety of premium quality flours including Grand Besan Flour, Royal Besan Flour, Shakthi Besan Flour, Soy products, and Corn Flour. All our products are naturally processed and hygienically packed.',
+        'We produce a variety of premium quality flours including Grand Besan Flour, Royal Besan Flour, Shakthi Besan Flour, Soy Chunks, and Corn Flour. All our products are naturally processed and hygienically packed.',
     },
     {
       question: "How is SMS FoodPro's besan flour made?",
@@ -280,7 +281,7 @@ export default function HomePage() {
                   'We focus on using the finest ingredients and advanced production methods to ensure every product meets the highest standards.',
               },
               {
-                icon: DollarSign,
+                icon: IndianRupee,
                 title: 'Affordable Excellence',
                 description:
                   'Premium quality at competitive prices. We believe excellent flour should be accessible to everyone.',
