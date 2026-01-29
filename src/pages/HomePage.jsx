@@ -107,15 +107,13 @@ export default function HomePage() {
 
             {/* Hero Image */}
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-elevated">
+              <div className="">
                 <img
-                  src="https://res.cloudinary.com/dytr7tpmt/image/upload/v1768933611/930f01bb-e7dc-4f36-a1ca-6d4f204ce549.png"
+                  src="https://res.cloudinary.com/dytr7tpmt/image/upload/v1769668519/1_vcfrx1.png"
                   alt="Premium Quality Flour"
-                  className="w-full h-auto"
+                  className="w-full h-auto rounded-lg"
                 />
               </div>
-              <div className="absolute -top-6 -right-6 w-32 h-32 bg-secondary/20 rounded-full blur-3xl"></div>
-              <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-primary/20 rounded-full blur-3xl"></div>
             </div>
           </div>
         </div>
@@ -193,7 +191,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="relative lg:sticky lg:top-24">
               <img
-                src="https://res.cloudinary.com/dytr7tpmt/image/upload/v1768923994/photo-1603380353725-f8a4d39cc41e_zbr4iy.jpg"
+                src="https://res.cloudinary.com/dytr7tpmt/image/upload/v1769668631/2_odvyfc.png"
                 alt="Manufacturing process"
                 className="rounded-2xl shadow-elevated w-full h-auto"
               />
@@ -435,7 +433,7 @@ export default function HomePage() {
             </div>
             <div className="relative">
               <img
-                src="https://res.cloudinary.com/dytr7tpmt/image/upload/v1768924055/photo-1509440159596-0249088772ff_u8hfsv.jpg"
+                src="https://res.cloudinary.com/dytr7tpmt/image/upload/v1769668706/3_lp4omq.png"
                 alt="Get in touch"
                 className="rounded-2xl shadow-elevated w-full h-auto"
               />
