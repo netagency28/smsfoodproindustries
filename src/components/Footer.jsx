@@ -143,7 +143,7 @@ export const Footer = () => {
             </p>
 
             <p className="text-sm text-muted-foreground">
-              Designed and Developed by <a href="https://netagency.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline transition-smooth">Net Agency</a>
+              Designed and Developed by <a href="https://netagency.in" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline transition-smooth">Net Agency</a>
             </p>
 
             <div className="flex space-x-6">

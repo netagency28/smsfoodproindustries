@@ -42,7 +42,7 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <img
-                src="https://res.cloudinary.com/dytr7tpmt/image/upload/v1768933272/c7d81e87-e978-4f5d-843e-91b157fbf058.png"
+                src="https://res.cloudinary.com/dytr7tpmt/image/upload/v1769668631/2_odvyfc.png"
                 alt="Flour processing"
                 className="rounded-2xl shadow-elevated w-full h-auto"
               />
